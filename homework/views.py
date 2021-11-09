@@ -1,11 +1,11 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def homework(reguest):
-    return HttpResponse('добро пожаловать в приложение ToDo - Admin')
+def homework(request):
+    return render(request, "index.html")
 
-def task(reguest):
-    return render(reguest, 'task.html')
+def task(request):
+    return render(request, 'task.html')
 
 def second(request):
     return HttpResponse('Test2 page')
