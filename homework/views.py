@@ -6,3 +6,6 @@ def homework(reguest):
 
 def task(reguest):
     return render(reguest, 'task.html')
+
+def second(request):
+    return HttpResponse('Test2 page')
